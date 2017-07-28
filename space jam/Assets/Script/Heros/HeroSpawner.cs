@@ -3,11 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 public class HeroSpawner : MonoBehaviour {
 	// x left and right z foward and back for max distance
-	public int maxHero=2;
+	public int maxHero=1;
 	public int heroCount=0;
-	public int spawnCounter=0;
 	public int heroSpawnRate=60;
 	public int heroIdNumber=1;
+	public float spawnCounter=0.0f; //changed 7/27/17 Drew, changed to float
 	// sides
 	public float[] maxDistancex  ;
 	// away from inn
@@ -81,8 +81,17 @@ public class HeroSpawner : MonoBehaviour {
 			}
 
 		}
+
+		if (heroCount != maxHero) {
+
+			spawnCounter += Time.deltaTime; //changed 7/27/17 Drew, counts up by each real time second
 		
-		spawnCounter=spawnCounter+1;
+			//Debug.Log("SpawnCounter: " + spawnCounter.ToString("f0")); converts the float into an integer for display purposes only
+
+		} else {
+
+			spawnCounter = 0.0f;
+		}
 
 		for (int i =0; i<HeroList.Count;i++) 
 		{
@@ -174,7 +183,7 @@ public class HeroSpawner : MonoBehaviour {
 
 
 
-		// now doing armor bais
+		// now doing armor bias
 		setter.gameObject.GetComponent<HeroAI> ().Armorstatsbias.Add ("Defense", Random.Range (0 , 10));
 		setter.gameObject.GetComponent<HeroAI> ().Armorstatsbias.Add ("Durablity", Random.Range (0 , 10));
 		setter.gameObject.GetComponent<HeroAI> ().Armorstatsbias.Add ("Weight", Random.Range (0 , 10));
@@ -195,7 +204,7 @@ public class HeroSpawner : MonoBehaviour {
 		setter.gameObject.GetComponent<HeroAI> ().ArmorClassbias.Add ("Heavy", Random.Range (-10, 11));
 
 		heroIdNumber += 1;
-		spawnCounter=0;
+		spawnCounter=0.0f;
 	}
 
 	public int GetNextIdNumber(){
