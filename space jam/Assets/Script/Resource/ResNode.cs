@@ -66,16 +66,16 @@ public class ResNode : MonoBehaviour {
 			if (MaxResHold != ResHold) {
 				MiningTimer += 1;
 			}
-			if (AllowHerocoll == true) {
-				if (myMainmoney.CanIBuy(PerUnit,false) == false) {
-					Broke = true;
-
-				} else {
-					Broke = false;
-				}
-
-
-			}
+//			if (AllowHerocoll == true) {
+//				if (myMainmoney.CanIBuy(PerUnit,false) == false) {
+//					Broke = true;
+//
+//				} else {
+//					Broke = false;
+//				}
+//
+//
+//			}
 
 
 			if(ResHold>=WorkerPickup && AllowWorkerColl==true && PickupRequested==false){
@@ -267,7 +267,8 @@ public class ResNode : MonoBehaviour {
 
 
 	public bool DoYouNeedPickup(int ID){
-		if (AllowHerocoll == true&& Broke==false&&(HeroChecker.Contains(new LastTimeLookedAt(ID,0.0f) )==false)&& ResHold!=0) {
+		
+		if (AllowHerocoll == true && myMainmoney.CanIBuy(PerUnit,false) == true && (HeroChecker.Contains(new LastTimeLookedAt(ID,0.0f) )==false)&& ResHold!=0) {
 			return true;
 
 		}

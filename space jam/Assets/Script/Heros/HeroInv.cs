@@ -246,13 +246,13 @@ public class HeroInv : MonoBehaviour {
 		}
 
 		MyHero.MyWorkControl.PickupDone (MyPickup);
-		MyPickup = new PickupInfo ();
+
 
 		if (MyHero.myrole == HeroAI.Role.Hero && MyPickup.Pickup.tag=="ResourceNode") {
 			
 			MyPickup.Pickup.GetComponent<ResNode> ().IDontWanna (MyHero.HeroIdNumber);
 		}
-
+		MyPickup = new PickupInfo ();
 		return false;
 	
 	}
