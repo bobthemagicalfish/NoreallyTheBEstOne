@@ -62,6 +62,7 @@ Corridor/Library/metadata/
 *.mdb
 *.info
 *.dwlt
+<<<<<<< HEAD
 space jam/Library/assetDatabase3
 space jam/Library/CurrentLayout.dwlt
 /space jam/Library/metadata/*
@@ -76,4 +77,11 @@ space jam/Library/expandedItems
 space jam/Assets/Editor/GitHub/PlatformResources/mac/git-lfs.zip
 space jam/Assets/Editor/GitHub/PlatformResources/windows/git.zip
 *.zip
+space jam/Library/assetDatabase3
+=======
+space jam/Library/shadercompiler-UnityShaderCompiler.exe0.log
+>>>>>>> db72dcb642dd8aff67c422532628d66fc2861818
+space jam/Library/metadata/69/69a1edbed83c9af4eb9fedb67c1e17d5
+space jam/Library/metadata/6b/6b187d93d1a387a4791896e844692b11
+*.mdb
 space jam/Library/assetDatabase3
