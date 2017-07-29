@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 public class HeroSpawner : MonoBehaviour {
-	// x left and right z foward and back for max distance
+	// x left and right z foward and back for max distance //xxxx//
 	public int maxHero=1;
 	public int heroCount=0;
 	public int heroSpawnRate=60;
