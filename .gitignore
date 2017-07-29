@@ -62,3 +62,18 @@ Corridor/Library/metadata/
 *.mdb
 *.info
 *.dwlt
+space jam/Library/assetDatabase3
+space jam/Library/CurrentLayout.dwlt
+/space jam/Library/metadata/*
+*.log
+*.mdb
+*.dll
+*.meta
+*.mdb
+*.dwlt
+space jam/Library/expandedItems
+/space jam/obj/Debug/*
+space jam/Assets/Editor/GitHub/PlatformResources/mac/git-lfs.zip
+space jam/Assets/Editor/GitHub/PlatformResources/windows/git.zip
+*.zip
+space jam/Library/assetDatabase3
