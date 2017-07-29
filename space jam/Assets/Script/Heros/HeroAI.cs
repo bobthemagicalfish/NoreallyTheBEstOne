@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-
+//didd you gert thisssssssssssssssssssssssssssssssss
+//or thissss
 public class HeroAI : MonoBehaviour {
 //stats default
 	public int heroHP = 100;
