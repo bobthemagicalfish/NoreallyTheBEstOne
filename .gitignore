@@ -84,3 +84,9 @@ space jam/Library/metadata/6b/6b187d93d1a387a4791896e844692b11
 space jam/Library/assetDatabase3
 space jam/Library/metadata/
 space jam/Library/metadata/
+*.stamp
+
+space jam/Library/AssetServerCacheV3
+*.stamp
+space jam/Library/ScriptMapper
+*.db
